@@ -1,16 +1,29 @@
 <?php
+/*
 // // Get the required codes from the configuration file
 $server = "localhost";
-$username   = "root";
-$password   = "";
-$database	="paypal_ipn";
+$username   = "caca4238_xeon9";
+$password   = "br8idea9";
+$database	="caca4238_paypal";
 
 
-$con = new mysqli($server,$username,$password,$database);
+$con = new mysqli($server, $username, $password, $database);
 if (!$con){
 die('Could not connect: ' . mysqli_connect_error($con));
 }
+*/
 
+
+$server = "localhost";
+$username   = "caca4238_tradey";
+$password   = "Donna!9098";
+$database	="caca4238_callatradey";
+
+
+$con = new mysqli($server, $username, $password, $database);
+if (!$con){
+die('Could not connect: ' . mysqli_connect_error($con));
+}
 
 
 

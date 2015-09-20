@@ -1,5 +1,17 @@
 <?php
-class PayPal_IPN{
+$server = "localhost";
+$username   = "caca4238_tradey";
+$password   = "Donna!9098";
+$database	="caca4238_callatradey";
+
+
+$con = new mysqli($server, $username, $password, $database);
+if (!$con){
+die('Could not connect: ' . mysqli_connect_error($con));
+}
+
+
+class PayPal_IPN {
 	
 	function infotuts_ipn($im_debut_ipn) {
 
@@ -79,7 +91,7 @@ class PayPal_IPN{
 
 	
 	function ipn_response($request){
-		mail("sanjeev00733@gmail.com","My subject",print_r($request,true));
+		mail("iridion2015@yandex.com","Paypal IPN listener",print_r($request,true));
 		$im_debut_ipn=true;
 	    if ($this->infotuts_ipn($im_debut_ipn)) {
 			

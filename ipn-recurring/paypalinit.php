@@ -1,6 +1,6 @@
 <?php
 	$data=array(
-	 //'merchant_email'=>'iridion2015-facilitator@yandex.com',
+	 //'merchant_email'=>'iridion2015biz@yandex.com',
 	 'merchant_email'=>'info@callatradey.com.au',
 	 'product_name'=>'Callatradey Unlimited',
 	 'f_amount'=>30, // trail Period Amount
@@ -11,7 +11,7 @@
 	 's_period'=>1, // Second Cycle
 	 'currency_code'=>'AUD',
 	 //'thanks_page'=>"http://".$_SERVER['HTTP_HOST'].'/sandbox/paypal-ipn/thank.php',
-	 'thanks_page'=>"http://www.callatradey.com.au/tradesman-signup",
+	 'thanks_page'=>"http://www.callatradey.com.au/sandbox/paypal-ipn/thank.php",
 	 'notify_url'=>"http://".$_SERVER['HTTP_HOST'].'/sandbox/paypal-ipn/ipn.php',
 	 'cancel_url'=>"http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'],
 	 'paypal_mode'=>false,
@@ -20,7 +20,7 @@
 
 
 
-	function infotutsPaypal( $data) {
+	function infotutsPaypal($data) {
 		define( 'SSL_URL', 'https://www.paypal.com/cgi-bin/webscr' );
 		define( 'SSL_SAND_URL', 'https://www.sandbox.paypal.com/cgi-bin/webscr' );
 
